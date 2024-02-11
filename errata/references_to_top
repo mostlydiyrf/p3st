@@ -1,0 +1,7 @@
+
+//////////////////////////////////////////////////////////////////////////////
+In the assembly and test instructions of each module, references to "top"
+refer to the circuit as drawn on the schematic for that module. For example,
+"Read voltage at top of R1" refers to R1 as it is drawn on the schematic. This
+may or may not be the "top" of R1 as it is layed out on the PCB.
+//////////////////////////////////////////////////////////////////////////////
