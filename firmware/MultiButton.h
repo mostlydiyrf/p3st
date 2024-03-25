@@ -17,6 +17,8 @@
  * MIT License
  */
 
+// // Modified by T.F. Carney to make longClick time = 1000ms (was 300ms).
+
 #pragma once
 
 #include <Arduino.h>
@@ -149,7 +151,7 @@ class MultiButton {
   private:
     static const int DEBOUNCE_DELAY    =  20; // ms
     static const int SINGLECLICK_DELAY = 250; // ms
-    static const int LONGCLICK_DELAY   = 1000; // ms
+    static const int LONGCLICK_DELAY   = 1000; // ms ***Modified by TFC from 300ms
 
     /**
      * Note:
