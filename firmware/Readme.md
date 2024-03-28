@@ -18,6 +18,8 @@ The new version includes the following features.
    ![LCD normal](https://mostlydiyrf.com/wp-content/uploads/2024/03/LCD_normal.jpg)
 * **Changable tuning steps**: 10Hz, 100Hz, 1KHz, and 10KHz. A single (short) click on the rotary-encoder "button" will cycle through the steps. The step increment is shown in the lower-right-hand corner of the LCD display.
 * **Ability to change BFO frequency** in real time. Access BFO tuning by pressing and holding the encoder button for one second. The display will switch to BFO tuning mode.The tuning increment is fixed at 10Hz. You will hear the change in the receiver as you tune the BFO up and down. Press and hold the button a second time to save the new BFO frequency in EEPROM and return to the regular display.
+
+   ![LCD BFO](https://mostlydiyrf.com/wp-content/uploads/2024/03/LCD_bfo.jpg)
  
   For more on the proper placement of the BFO frequency in SSB transceivers, see videos by **VK3YE** (<https://youtu.be/sXJmAhpAjeI?si=G-n8YnkCASo_OiY>, **Farhan** (<https://youtu.be/t6LGXhS4_O8?si=mpzQzo4UJICHqtBc>), **ZL2CTM** (<https://youtu.be/2FbMPRpvZh8?si=mC00r52cYEJh7q_Y>), and **Level UP EE Lab** (<https://youtu.be/6aMZeNEG9s8?si=9wfS2dIyOJ_XF6zv>).
 * **Ability to change the display offset** to account for the difference between the VFO frequency and the intended frequency of operation (a.k.a., IF offset). For instance, to receive or transmit a signal at 14.015MHz, the VFO has to be set to 9.10MHz to be mixed with the 4.915MHz BFO/carrier frequency. No one wants to see the BFO frequency displayed--they want to see the frequency of operation.
