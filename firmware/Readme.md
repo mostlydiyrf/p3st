@@ -22,7 +22,7 @@ The new version includes the following features.
    ![LCD BFO](https://mostlydiyrf.com/wp-content/uploads/2024/03/LCD_bfo.jpg)
  
   For more on the proper placement of the BFO frequency in SSB transceivers, see videos by **VK3YE** (<https://youtu.be/sXJmAhpAjeI?si=G-n8YnkCASo_OiY>, **Farhan** (<https://youtu.be/t6LGXhS4_O8?si=mpzQzo4UJICHqtBc>), **ZL2CTM** (<https://youtu.be/2FbMPRpvZh8?si=mC00r52cYEJh7q_Y>), and **Level UP EE Lab** (<https://youtu.be/6aMZeNEG9s8?si=9wfS2dIyOJ_XF6zv>).
-* **Ability to change the display offset** to account for the difference between the VFO frequency and the intended frequency of operation (a.k.a., IF offset). For instance, to receive or transmit a signal at 14.015MHz, the VFO has to be set to 9.10MHz to be mixed with the 4.915MHz BFO/carrier frequency. No one wants to see the BFO frequency displayed--they want to see the frequency of operation.
+* **Ability to change the display offset** to account for the difference between the VFO frequency and the intended frequency of operation (a.k.a., IF offset). For instance, to receive or transmit a signal at 14.015MHz, the VFO has to be set to 9.10MHz to be mixed with the 4.915MHz BFO/carrier frequency. No one wants to see the actual VFO frequency displayed--they want to see the frequency of operation.
 
    For this reason, an offset equal to the IF frequency is used for display purposes, and it needs to be adjustable because the precise IF frequency is determined by the center of the crystal filter passband--each one is a little different owing to component tolerances.
 
