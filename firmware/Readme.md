@@ -28,6 +28,8 @@ The new version includes the following features.
 
   To change the display offset, press and hold the encoder button to bring up the BFO tuning. From there, a single click on the button will bring up the current offset. Change it with the tuning knob. A single click will then save the new offset to EEPROM and return to the BFO display. From there, a long click-and-hold will take you back to normal operation.
 
+  ![LCD offset](https://mostlydiyrf.com/wp-content/uploads/2024/03/LCD_offset.jpg)
+
 * **Ability to change the Si5351 correction factor**. As implemented here, the Si5351 time base is an external crystal built into the module. In this case its nominal frequency is 25MHz, but of course its actual frequency will be a little off from that. A correction factor can be applied in firmware (ultimately in parts-per-billion) to compensate, but that factor will be different from one Si5351 module to another. 
 
    By default, the factor is set to 160000 (in 0.01Hz resolution) which seems to be average for the modules the P3ST uses. Without the correction, a desired signal of 10MHz, for instance, would actually be outputted as 10.001600MHz, or 1.6KHz off. The correction factor fixes that. But the 160000 factor is only an average. You milage **will** vary. As part of the process of aligning the frequency display, you'll have to change the factor saved in firmware.
