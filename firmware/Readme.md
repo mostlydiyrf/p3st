@@ -14,7 +14,7 @@ A number of bug fixes and improvements have been incorporated in V.2. You are st
 The new version includes the following features.
 
 * **VFO starting frequency** set to 9085MHz with a +4.915MHz display offset. This start-up default will display as "14.000.000."
-   ![alt text](https://mostlydiyrf.com/wp-content/uploads/2024/03/LCD_normal-scaled.jpg"Logo Title Text 1")
+![alt text](https://mostlydiyrf.com/wp-content/uploads/2024/03/LCD_normal-scaled.jpg"Logo Title Text 1")
 * **Changable tuning steps**: 10Hz, 100Hz, 1KHz, and 10KHz. A single (short) click on the rotary-encoder "button" will cycle through the steps. The step increment is shown in the lower-right-hand corner of the LCD display.
 * **Ability to change BFO frequency** in real time. Access BFO tuning by pressing and holding the encoder button for one second. The display will switch to BFO tuning mode.The tuning increment is fixed at 10Hz. You will hear the change in the receiver as you tune the BFO up and down. Press and hold the button a second time to save the new BFO frequency in EEPROM and return to the regular display.
  
