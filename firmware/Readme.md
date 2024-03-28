@@ -36,7 +36,7 @@ The new version includes the following features.
 
    To do so, using the regular tuning display, first tune in to a known frequency. This could be a beacon, a net known to operate on a specific frequency, another transceiver operating at a specific frequency, or even a signal generator fed into a dummy load (as long as you can hear and zero-beat it on the P3ST).
    
-   The display on the P3ST will almost certainly **not** show the exact frequency you're tuned to. It could show higher or lower than the known frequency. At this point, double-click on the tuning-knob button. The display will change to allow you to dial in the frequency you know your actually tuned to.
+   The display on the P3ST will almost certainly **not** show the exact frequency you're tuned to. It could show higher or lower than the known frequency. At this point, double-click on the tuning-knob button. The display will change to allow you to dial in the frequency you know you're actually tuned to.
 
   ![LCD BFO](https://mostlydiyrf.com/wp-content/uploads/2024/03/LCD_correction.jpg)
    
