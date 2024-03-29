@@ -431,8 +431,8 @@ void setup() {
   Wire.begin();
   EEPROM.begin(256);
 
-  Serial.begin(115200);
-  while(!Serial);
+  //Serial.begin(115200);
+  //while(!Serial);
 
   calFactor = (readInt(10) - 10000);    
   // Initialize the Si5351
