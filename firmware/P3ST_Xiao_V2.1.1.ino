@@ -425,40 +425,40 @@ void setup() {
 
   uint32_t displayOffsetTest;
   uint32_t bfoTest;
+  uint32_t calFactorTest;
   
   lcd.init();
   lcd.backlight();
-
   Wire.begin();
   EEPROM.begin(256);
-
-  //Serial.begin(115200);
-  //while(!Serial);
-
-  calFactor = (readInt(10) - 10000);    
-  // Initialize the Si5351
   si5351.init(SI5351_CRYSTAL_LOAD_8PF, 0, 0);
-  // Now pull saved correction factor from eeprom             
-  si5351.set_correction(((calFactor -10000) * 100), SI5351_PLL_INPUT_XO);
   si5351.drive_strength(SI5351_CLK0, SI5351_DRIVE_8MA);
-
+  //////////////////////////////////////
+  calFactorTest = readInt(10);
+  if (calFactorTest == 0) {
+    saveInt(10, calFactor + 10000);  // 10000 padding added to prevent underflow for negative cal factors.
+  }
+  si5351.set_correction(((calFactor - 10000) * 100), SI5351_PLL_INPUT_XO); 
+  /////////////////////////////////////
   displayOffsetTest = readUint32(5);
   if (displayOffsetTest == 0) {         // Tests for first-time use (no offset saved in eeprom).
     saveUint32(5, displayOffset);       // Saves default value in eeprom.
   }
+  ///////////////////////////////////
   bfoTest = readUint32(0);
   if (bfoTest == 0) {              // Tests for first-time use (no BFO saved in eeprom).
     saveUint32(0, lastUsedBFO);    // Saves default value in eeprom.
   }
   lastUsedBFO = readUint32(0);
+  
   si5351.set_freq(lastUsedBFO * 100, SI5351_CLK2);
   si5351.set_freq(lastUsedVFO * 100, SI5351_CLK0);
   displayFreqLine(0,lastUsedVFO + displayOffset);  //Parameters: LCD line (0 or 1), frequency value.
   displayTuningStep(step, 1);      //Parameters: displayTuningStep(int Step, byte lineNum)
   lcd.setCursor(0, 1);
   lcd.print("P3ST");
+  testProg();    // A series of flashing RGB colors 
 
-  testProg();
 } // End of setup()
 
 //========================================
