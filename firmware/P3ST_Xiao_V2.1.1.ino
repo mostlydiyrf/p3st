@@ -424,6 +424,7 @@ void si5351CorrectionFactor() {
 void setup() {
 
   uint32_t displayOffsetTest;
+  uint32_t bfoTest;
   
   lcd.init();
   lcd.backlight();
@@ -445,19 +446,19 @@ void setup() {
   if (displayOffsetTest == 0) {         // Tests for first-time use (no offset saved in eeprom).
     saveUint32(5, displayOffset);       // Saves default value in eeprom.
   }
-  
+  bfoTest = readUint32(0);
+  if (bfoTest == 0) {              // Tests for first-time use (no BFO saved in eeprom).
+    saveUint32(0, lastUsedBFO);    // Saves default value in eeprom.
+  }
   lastUsedBFO = readUint32(0);
   si5351.set_freq(lastUsedBFO * 100, SI5351_CLK2);
   si5351.set_freq(lastUsedVFO * 100, SI5351_CLK0);
-
-  // LCD display 
   displayFreqLine(0,lastUsedVFO + displayOffset);  //Parameters: LCD line (0 or 1), frequency value.
   displayTuningStep(step, 1);      //Parameters: displayTuningStep(int Step, byte lineNum)
   lcd.setCursor(0, 1);
   lcd.print("P3ST");
 
   testProg();
-  
 } // End of setup()
 
 //========================================
