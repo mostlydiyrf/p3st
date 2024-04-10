@@ -1,4 +1,4 @@
-// Arduino "sketch" for use with the P3ST Xiao Digital VFO/BFO (v.2 -- 3.26.24)
+// Arduino "sketch" for use with the P3ST Xiao Digital VFO/BFO (v.2.1.1)
 // (C) T.F. Carney (K7TFC). For use under the terms of the
 // Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.
 // See https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
