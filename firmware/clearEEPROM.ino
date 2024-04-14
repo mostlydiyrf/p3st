@@ -2,8 +2,6 @@
 // P3ST_Xiao.ino sketch (both the Carney and Marks versions). This
 // will make the Xiao "look" like it's never been programmed before.
 
-
-
 #include <EEPROM.h>
 
 uint32_t bfoEEPROM = 0;
@@ -50,7 +48,7 @@ void setup() {
   Serial.println("Writing all zeros to Correction EEPROM");
   saveUint32(10, calEEPROM);
 
-Serial.println("Writing all zeros to EEPROM address 15");
+  Serial.println("Writing all zeros to EEPROM address 15");
   saveUint32(15, address15);  
 
   Serial.print("BFO EEPROM now reads: "); Serial.println(readUint32(0));
@@ -62,6 +60,5 @@ Serial.println("Writing all zeros to EEPROM address 15");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  // empty
 }
